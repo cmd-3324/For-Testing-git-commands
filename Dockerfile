@@ -1,2 +1,3 @@
-FROM alpine:latest
-RUN echo "Hello from GitHub Actions and Docker!"
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
